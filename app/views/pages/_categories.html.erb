@@ -6,7 +6,7 @@
           <%= link_to products_path(category_id: category.id), class: "tm_pb_icon_box_module__item  tm_pb_icon_box_module__item_0 tm-thumbs-wrap effect-fade",
             title: category.name do %>
             <span class="tm-pb-icon tm-waypoint tm_pb_animation_off tm_pb_icon_align_center category-block">
-              <%= image_tag category.feature_image, size: 80, class: "category-img" %>
+              <%= image_tag category.feature_image, size: 80, class: "category-img" if category.feature_image %>
               <%= image_tag category.feature_image_2, size: 80, class: "category-img" %>
             </span>
             <span class="tm_pb_icon_box_module__item__title category-span"><%= category.name %></span>
